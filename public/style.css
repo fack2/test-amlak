@@ -1,0 +1,48 @@
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #ebf2f5;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: black;
+  }
+
+  div.form {
+    display: block;
+    margin-top: 50px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  input {
+    width: 70%;
+    height: 30px;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  button {
+    background-color: black;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-family: bold;
+  }
+}
