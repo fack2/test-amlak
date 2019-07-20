@@ -64,19 +64,18 @@ const searchHandler = (request, response) => {
       response.end("<h1>server error</h1>");
     } else if (inputValue.length > 0) {
       response.writeHead(200, { "Content-Type": "application/json" });
-      //const text = file.split('\n').map((x) => x);
+  
       const allList = JSON.parse(file);
       const capitalizedFirstLetter = inputValue[0].toUpperCase();
-      // console.log("capital", capitalizedFirstLetter);
+  
       inputValue = capitalizedFirstLetter + inputValue.slice(1);
-      // console.log("search", inputValue);
-      //const filteredData = matchedResults(text, inputValue);
+     
       const filteredData = allList.filter(element => {
         return element.name.indexOf(inputValue) === 0;
       });
 
       const country = JSON.stringify(filteredData);
-      //  console.log("filtered data search", filteredData);
+    
       console.log("file text", JSON.stringify(country));
       response.end(country);
     } else {
