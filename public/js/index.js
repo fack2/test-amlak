@@ -14,11 +14,11 @@ function request(url, cb) {
 }
 const countryInput = document.getElementById("country");
 
-//const countryList = document.getElementById("section-res");
+
 
 const buttonsearch = document.getElementById("buttonsearch");
 country.addEventListener("input", function() {
-  //  console.log("hellllo");
+
   const input = countryInput.value;
   console.log("hellllo", input);
   request(`/search/${input}`, data => {
