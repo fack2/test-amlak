@@ -4,7 +4,6 @@ const router = (request, response) => {
 	if (url === '/') {
 		homeHandler(request, response);
 	} else if (url.split('.')[1]) {
-		// console.log("hello");
 		publicHandler(request, response, url);
 	} else if (url.includes('/search/')) {
 		searchHandler(request, response, url);
