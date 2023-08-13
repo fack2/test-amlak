@@ -1,0 +1,51 @@
+
+
+/*  css body */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: right;
+}
+
+ 
+.collapse-section {
+    color: #013c38;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-header {
+    border-color: #013c38;  }
+
+    .form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    direction: rtl;
+}
+
+select.form-control:not([size]):not([multiple]) {
+     
+    height: auto;
+}
+
+.build {
+    display: none;
+}
+
+.card-save{
+    text-align: center;
+}
+
+
+.btn-save{
+ background-color: #003c38;
+ color: white;
+ width: 200px;
+}
