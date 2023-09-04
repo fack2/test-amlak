@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="Ar">
 <head>
   <title>Bootstrap Example</title>
@@ -22,8 +22,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/body.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
 
  
 </head>
@@ -63,9 +63,9 @@
 
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">إضافةة</a>
-          <a class="dropdown-item" href="#">تدقيق  </a>
-          <a class="dropdown-item" href="#">  تعديل  </a>
+          <a class="dropdown-item" href="addProperty.html">إضافة</a>
+          
+          <a class="dropdown-item" href="searchProperty.html">  بحث  </a>
         </div>
       </li>   
 
@@ -80,9 +80,9 @@
 
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">فتح معاملة</a>
-          <a class="dropdown-item" href="#">ممرحلة 1 </a>
-          <a class="dropdown-item" href="#">  مرحلة 2  </a>
+          <a class="dropdown-item" href="openRent.html">فتح  ملف</a>
+          <a class="dropdown-item" href="#">مدير المكتب   </a>
+          <a class="dropdown-item" href="#">    لجنة أملاك الدولة </a>
         </div>
       </li>   
 
@@ -232,8 +232,6 @@
 </nav>
             </div>
 
-
-
  
 <hr>
 <div class="grey-bg container-fluid">
@@ -242,7 +240,32 @@
 
  <div class="container">
   <h2> إضافة ملكية  </h2>
- 
+ <div class="col-lg-12">
+                      <!-- radio -->
+                      <div class="form-group">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio">
+                          <label for="customRadio1" class="custom-control-label"> تسوية</label>
+                        </div>
+                        
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" checked>
+                          <label for="customRadio2" class="custom-control-label">  استملاك</label>
+                        </div>
+                        
+                          <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio3" name="customRadio">
+                          <label for="customRadio3" class="custom-control-label"> تسجيل  مجدد</label>
+                        </div>
+
+                         <div class="custom-control custom-radio">
+                          <input class="custom-control-input" type="radio" id="customRadio4" name="customRadio">
+                          <label for="customRadio4" class="custom-control-label">   م.م </label>
+                        </div>
+
+
+                      </div>
+                    </div>
   <div id="accordion">
 
     <div class="card">
@@ -607,6 +630,13 @@
       <label for="inputPassword4">سند التسجيل</label>
       <input type="file" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
+
+
+    <div class="form-group col-md-6">
+      <label for="file3">قرار الإستملاك </label>
+      <input type="file" class="form-control" id="file3" placeholder="Password">
+    </div>
+
   </div>
   
   
@@ -632,14 +662,14 @@
  </form>
 </div>
 
- 
+
 
 <script>
 function myFunction() {
-  var text = document.getElementById("build");
-
+   // alert("jhgh") ;
   var checkBox = document.getElementById("buildCheck");
-   if (checkBox.checked == true){
+  var text = document.getElementById("build");
+  if (checkBox.checked == true){
     text.style.display = "block";
      text.style.float = "right";
   } else {
